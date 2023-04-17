@@ -120,7 +120,7 @@ test_pipeline = [
             dict(type='Collect', keys=['img'])
         ])
 ]
-base = "/share/NAS/Benz_Cell/cellLabel-main/"
+base = "/share/NAS_DATASETS/Benz_Cell/cellLabel-main/"
 data = dict(
     samples_per_gpu=5,
     workers_per_gpu=1,

@@ -51,8 +51,8 @@ data = dict(
     train=dict(
         type='CocoDataset',
         ann_file=
-        '/share/NAS_DATASETS/Benz_Cell/cellLabel-main/Coco_File/Cell_TrainNuc_April.json',
-        img_prefix='/share/NAS_DATASETS/Benz_Cell/cellLabel-main/',
+        '/share/NAS/Benz_Cell/cellLabel-main/Coco_File/Cell_TrainNuc_April.json',
+        img_prefix='/share/NAS/Benz_Cell/cellLabel-main/',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(type='LoadAnnotations', with_bbox=True),
@@ -78,8 +78,8 @@ data = dict(
     val=dict(
         type='CocoDataset',
         ann_file=
-        '/share/NAS_DATASETS/Benz_Cell/cellLabel-main/Coco_File/Cell_TestNuc_April.json',
-        img_prefix='/share/NAS_DATASETS/Benz_Cell/cellLabel-main/',
+        '/share/NAS/Benz_Cell/cellLabel-main/Coco_File/Cell_TestNuc_April.json',
+        img_prefix='/share/NAS/Benz_Cell/cellLabel-main/',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
@@ -106,8 +106,8 @@ data = dict(
     test=dict(
         type='CocoDataset',
         ann_file=
-        '/share/NAS_DATASETS/Benz_Cell/cellLabel-main/Coco_File/Cell_TestNuc_April.json',
-        img_prefix='/share/NAS_DATASETS/Benz_Cell/cellLabel-main/',
+        '/share/NAS/Benz_Cell/cellLabel-main/Coco_File/Cell_TestNuc_April.json',
+        img_prefix='/share/NAS/Benz_Cell/cellLabel-main/',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
@@ -209,7 +209,7 @@ model = dict(
         max_per_img=300))
 classes = ('object', )
 img_scale = (1020, 768)
-base = '/share/NAS_DATASETS/Benz_Cell/cellLabel-main/'
+base = '/share/NAS/Benz_Cell/cellLabel-main/'
 device = 'cuda'
 work_dir = './work_dirs/New_OCT/ATSS_R50_CellNuc'
 auto_resume = False
